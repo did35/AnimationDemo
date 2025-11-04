@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  AnimationDemoView.swift
 //  AnimationDemo
 //
 //  Created by Didier Delhaisse on 04/11/2025.
@@ -7,7 +7,9 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct AnimationDemoView: View {
+    @State private var vm = AnimationDemoViewModel()
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -20,5 +22,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    AnimationDemoView()
 }
