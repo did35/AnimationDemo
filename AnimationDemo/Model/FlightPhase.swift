@@ -32,7 +32,7 @@ enum FlightPhase: String, CaseIterable, Identifiable {
         }
     }
     
-    var fieldLength: Float {
+    var fieldStrength: Float {
         switch self {
         case .taxi: return 1.1
         case .climb: return 0.95
